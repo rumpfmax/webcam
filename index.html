@@ -19,6 +19,7 @@
     .column {
       float: left;
       width: 50%;
+      height: 500px;
       padding: 10px;
     }
 
@@ -32,12 +33,17 @@
       display: table;
       clear: both;
     }
+
+    .cam {
+        
+    }
     
     /* properly display Buergenstock panorama */
     .bstock-crop {
-        max-width: 50%
+        max-width: 100%;
+        max-height: 100%;
         overflow: hidden;
-        text-indent: -140px;
+        text-indent: -80px;
     }
     
     .bstock-crop img {
@@ -48,15 +54,17 @@
 <body>
     
 <!-- Header -->
-<div class="header">
-    <h1>Rumpf</h1>
-</div>
+<!--<div class="header">-->
+<!--    <h1>Rumpf</h1>-->
+<!--</div>-->
 
 <!-- Webcam Grid -->
 
 <div class="row">
     <div class="column">
-        <img src="https://storage.roundshot.com/53a8348147a752.77568194/2020-12-16/13-00-00/2020-12-16-13-00-00_half.jpg" style="width:100%">
+        <div class=bstock-crop>
+            <img src="https://storage.roundshot.com/53a8348147a752.77568194/2020-12-16/13-00-00/2020-12-16-13-00-00_half.jpg">
+        </div>
         <img src="http://212.30.203.91:8080/mjpg/video.mjpg" style="width:100%">
     </div>
     <div class="column">
